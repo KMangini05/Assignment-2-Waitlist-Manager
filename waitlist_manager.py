@@ -6,7 +6,7 @@ class Node:
         name (str): The name of the customer.
         next (Node): A reference to the next node in the list.
     '''
-    def _init_(self, name):
+    def __init__(self, name):
         self.name = name #Stores names of each customer in waiting list
         self.next = None #Reference to next node in the list
     
@@ -25,7 +25,7 @@ class Waitlist:
         remove(name): Removes a customer from the waitlist by name.
         print_list(): Prints the current waitlist.
     '''
-    def _init_(self):
+    def __init__(self):
         self.head = None
 
     def add_front(self, name):
